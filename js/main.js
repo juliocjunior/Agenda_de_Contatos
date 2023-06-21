@@ -2,6 +2,10 @@ const form = document.getElementById('form-atividade');
 const nomes = [];
 const numeros = [];
 
+$(document).ready(function() {
+    $('#numero-contato').mask('(00)00000-0000')
+})
+
 let  linhas = ''; 
 
 form.addEventListener('submit', function(e) {
